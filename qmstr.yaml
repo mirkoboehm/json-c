@@ -1,0 +1,20 @@
+package:
+  name: "JSON-C"
+  metadata:
+    Vendor: "Endocode"
+    OcFossLiaison: "Mirko Boehm"
+    OcComplianceContact: "foss@endocode.com"
+  analysis:
+    - analyzer: git-analyzer
+      name: "Git Analyzer"
+      config:
+        workdir: "/buildroot/json-c"
+    - analyzer: spdx-analyzer
+      name: "Simple SPDX Analyzer"
+      selector: sourcecode
+  reporting:
+    - reporter: qmstr-reporter-html
+      name: "HTML Reporter"
+      config:
+        siteprovider: "Endocode"
+        baseurl: "http://qmstr.org/packages/"
