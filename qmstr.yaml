@@ -9,9 +9,9 @@ package:
       name: "Git Analyzer"
       config:
         workdir: "/buildroot/"
-#    - analyzer: spdx-analyzer
-#      name: "Simple SPDX Analyzer"
-#      selector: sourcecode
+    - analyzer: spdx-analyzer
+      name: "Simple SPDX Analyzer"
+      selector: sourcecode
     - analyzer: scancode-analyzer
       name: "Scancode Analyzer"
       selector: sourcecode
